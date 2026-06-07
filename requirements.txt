@@ -1,0 +1,35 @@
+# Akylai KWS project — pinned to the exact versions used to build this project.
+# Python 3.12.  Install with:  make install
+
+# --- core numerics / data ---
+numpy==2.4.6
+pandas==3.0.3
+pyarrow==24.0.0
+scipy==1.17.1
+
+# --- audio DSP ---
+librosa==0.11.0
+numba==0.65.1
+soundfile==0.14.0
+
+# --- machine learning ---
+scikit-learn==1.9.0
+
+# --- Hugging Face datasets / hub ---
+datasets==4.8.0
+huggingface_hub==1.18.0
+hf-xet==1.5.0
+
+# --- plotting ---
+matplotlib==3.10.9
+seaborn==0.13.2
+
+# --- utils ---
+joblib==1.5.3
+tqdm==4.68.1
+PyYAML==6.0.3
+
+# --- real-time microphone capture (optional; needs system PortAudio) ---
+# Linux:  sudo apt-get install portaudio19-dev   |   macOS:  brew install portaudio
+# Only required for live-stream mode of utils/stream_preprocessor.py.
+PyAudio==0.2.14
